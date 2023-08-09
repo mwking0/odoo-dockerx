@@ -81,6 +81,12 @@ ENV ODOO_RC /etc/odoo/odoo.conf
 
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py
 
+#Copy custom addons (new developed addons)
+COPY ./addons /mnt/extra-addons
+
+#Copy extra addons (old-production-ready addons or installed addons from the store)
+COPY ./addon_source /opt/addons
+
 # Set default user when running the container
 USER odoo
 
