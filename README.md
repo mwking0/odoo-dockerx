@@ -10,7 +10,7 @@ Here's what the workflow does:
 
 1. Checks out the repository's code.
 2. Logs in to Docker Hub using the provided Docker username and password (stored as secrets in the repository settings).
-3. Builds and pushes the Docker image with the tag `mwking0/odoo:latest`.
+3. Builds and pushes the Docker image with the tag `username/Image_name:version`.
 
 ## Dockerfile
 
